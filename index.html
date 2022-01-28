@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://www.peacocktv.com/watch/profiles?return=%2Fwatch%2Fhome -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="async" src="./Peacock_files/s09470640225615"></script><script type="text/javascript" async="async" src="./Peacock_files/s06592977553324"></script><style>body{opacity:0}</style><link rel="icon" href="https://www.peacocktv.com/international/static/favicon-nbcuott-us.ico"><link rel="apple-touch-icon" href="https://www.peacocktv.com/international/static/apple-touch-icon-nbcuott-us.png"><link rel="preload" href="https://www.peacocktv.com/international/static/offline-error.jpg" as="image" type="image/jpg"><style>html{--offline-background:url("/international/static/offline-error.jpg")}</style> <!-- html-minifier-ignore -->
+  <!-- 3.1.22 -->
+  <script type="text/javascript" src="./Peacock_files/NRJS-4fba5deb5958a2e1511"></script><script src="./Peacock_files/nr-spa-1198.min.js.download"></script><script>
+    var MediaSource = MediaSource || {}; // Polyfill for iOS
+    (function () {
+      
+      if (navigator.userAgent.indexOf('Chrome') == -1 && navigator.userAgent.indexOf('Safari') != -1) {
+        const errorImage = new Image();
+        errorImage.src = 'international/static/offline-error.jpg';
+      }
+      /* eslint-disable */
+function goToBrowserWarningPage() {
+  window.location.href = '/international/static/9bd255c/browser/browser.html';
+}
+
+// eliminate <=IE8
+if (!Array.prototype.indexOf) {
+  goToBrowserWarningPage();
+} else {
+  var minBrowserVersions = {
+    Firefox: 88,
+    Chrome: 75,
+    Safari: 12,
+    Edg: 80, // Blink/Chromium
+    FacebookAppBrowser: 9999,
+    InstagramAppBrowser: 9999,
+  };
+  var userAgent = navigator.userAgent;
+  var browserName = navigator.appName;
+  var fullVersion = '' + parseFloat(navigator.appVersion);
+  var majorVersion = parseInt(navigator.appVersion, 10);
+  var nameOffset;
+  var verOffset;
+  var ix;
+
+  // In Edge Chromium, the true version is after "Edg"
+  if ((verOffset = userAgent.indexOf('Edg/')) != -1) {
+    browserName = 'Edg';
+    fullVersion = userAgent.substring(verOffset + 4);
+  }
+  // In Chrome, the true version is after "Chrome"
+  else if ((verOffset = userAgent.indexOf('Chrome')) != -1) {
+    browserName = 'Chrome';
+    fullVersion = userAgent.substring(verOffset + 7);
+  }
+  // In Safari, the true version is after "Safari" or after "Version"
+  else if ((verOffset = userAgent.indexOf('Safari')) != -1) {
+    browserName = 'Safari';
+    fullVersion = userAgent.substring(verOffset + 7);
+
+    if ((verOffset = userAgent.indexOf('Version')) != -1) {
+      fullVersion = userAgent.substring(verOffset + 8);
+    }
+  }
+  // In Firefox, the true version is after "Firefox"
+  else if ((verOffset = userAgent.indexOf('Firefox')) != -1) {
+    browserName = 'Firefox';
+    fullVersion = userAgent.substring(verOffset + 8);
+  }
+  // On the Facebook App Browser the version does not matter,
+  // we let the user browse and we redirect him to the native app/app store as they try to playback
+  else if (userAgent.indexOf('FBAN') > -1 || userAgent.indexOf('FBAV') > -1) {
+    browserName = 'FacebookAppBrowser';
+    fullVersion = '9999';
+  }
+  // On the Instagram App Browser the version does not matter,
+  // we let the user browse and we redirect him to the native app/app store as they try to playback
+  else if (userAgent.indexOf('Instagram') > -1) {
+    browserName = 'InstagramAppBrowser';
+    fullVersion = '9999';
+  }
+  // In most other browsers, "name/version" is at the end of userAgent
+  else if ((nameOffset = userAgent.lastIndexOf(' ') + 1) < (verOffset = userAgent.lastIndexOf('/'))) {
+    browserName = userAgent.substring(nameOffset, verOffset);
+    fullVersion = userAgent.substring(verOffset + 1);
+
+    if (browserName.toLowerCase() == browserName.toUpperCase()) {
+      browserName = navigator.appName;
+    }
+  }
+
+  // trim the fullVersion string at semicolon/space if present
+  if ((ix = fullVersion.indexOf(';')) != -1) {
+    fullVersion = fullVersion.substring(0, ix);
+  }
+
+  if ((ix = fullVersion.indexOf(' ')) != -1) {
+    fullVersion = fullVersion.substring(0, ix);
+  }
+
+  majorVersion = parseInt('' + fullVersion, 10);
+
+  if (isNaN(majorVersion)) {
+    majorVersion = parseInt(navigator.appVersion, 10);
+  }
+
+  if (!minBrowserVersions[browserName] || majorVersion < minBrowserVersions[browserName]) {
+    goToBrowserWarningPage();
+  }
+}
+
+    })();
+    /* eslint-disable func-names */
+window.chunkFailure = (function () {
+  const appErrorRoute = '/watch/error';
+  const state = {
+    isAuthenticating: false,
+    error: undefined,
+  };
+
+  return function ({ isAuthenticating, error }) {
+    state.isAuthenticating =
+      isAuthenticating !== undefined ? isAuthenticating : state.isAuthenticating;
+    state.error = error !== undefined ? error : state.error;
+
+    if (!state.isAuthenticating && state.error) {
+      if (
+        window.location.pathname !== appErrorRoute &&
+        !'/sign-in'.includes(window.location.pathname)
+      ) {
+        if (window.Raven) {
+          window.Raven.captureException(state.error);
+        }
+
+        window.location = appErrorRoute;
+      }
+    }
+  };
+})();
+
+  </script>
+  <script type="text/javascript" src="./Peacock_files/new-relic.js.download"></script>
+  <!-- /html-minifier-ignore --> <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="robots" content="noindex,follow"><link rel="preconnect" href="https://nbcstreaming.sc.omtrdc.net/" crossorigin=""><link rel="preconnect" href="https://sas.peacocktv.com/" crossorigin=""><link rel="preconnect" href="https://cybertron.id.peacocktv.com/" crossorigin=""><link rel="preconnect" href="https://atom.peacocktv.com/" crossorigin=""><link rel="preconnect" href="https://persona.id.peacocktv.com/" crossorigin=""><link rel="preconnect" href="https://throttled.ovp.peacocktv.com/" crossorigin=""><link href="https://www.peacocktv.com/international/static/180e450c2ad85d4dd2bb918916cc9c08.woff2" rel="preload" as="font" crossorigin=""><link href="https://www.peacocktv.com/international/static/2212ee2f8ed64ac0092b594f9d3a9321.woff2" rel="preload" as="font" crossorigin=""><link href="https://www.peacocktv.com/international/static/2b9e23f772eec69c8fcbf1d390ee54d5.woff2" rel="preload" as="font" crossorigin=""><link href="https://www.peacocktv.com/international/static/9bd255c/browser/assets/peacock_sans-bold.woff2" rel="preload" as="font" crossorigin=""><link href="https://www.peacocktv.com/international/static/9bd255c/browser/assets/peacock_sans-medium.woff2" rel="preload" as="font" crossorigin=""><link href="https://www.peacocktv.com/international/static/a57f7f3a5aff55ca301361bb22fbfc12.woff2" rel="preload" as="font" crossorigin=""><link href="https://www.peacocktv.com/international/static/b2d9b3f462101edc898666dc5dea8ee7.woff2" rel="preload" as="font" crossorigin=""><link href="https://www.peacocktv.com/international/static/ca2c79c0a98a140f7d72fe4a99ce5b26.woff2" rel="preload" as="font" crossorigin=""><link href="https://www.peacocktv.com/international/static/d26c011f8756e9969066cb838923f630.woff2" rel="preload" as="font" crossorigin=""><link href="https://www.peacocktv.com/international/static/de008f09478eb65af50f61d5f7d3a310.woff2" rel="preload" as="font" crossorigin=""><link href="https://www.peacocktv.com/international/static/peacock_sans-bold.woff2" rel="preload" as="font" crossorigin=""><link href="./Peacock_files/core-bundle.css" rel="preload" as="style"><link href="https://www.peacocktv.com/international/static/9bd255c/core-bundle.js" rel="preload" as="script"><link href="./Peacock_files/watch-bundle.css" rel="preload" as="style"><link href="https://www.peacocktv.com/international/static/9bd255c/watch-bundle.js" rel="preload" as="script"><link href="./Peacock_files/main.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="./Peacock_files/nbcuott-scss.css"><script src="./Peacock_files/sky-tags.js.download"></script><link rel="stylesheet" type="text/css" href="./Peacock_files/4395.css"><link rel="stylesheet" type="text/css" href="./Peacock_files/9384.css"><link rel="stylesheet" type="text/css" href="./Peacock_files/core-bundle.css"><title>Peacock</title><link rel="stylesheet" type="text/css" href="./Peacock_files/2445.css"><link rel="stylesheet" type="text/css" href="./Peacock_files/watch-bundle.css"></head><body><div onclick="" id="mount"><div class="page-group"><div class="view-group"><div class="notification notification--info"></div><div class="primary-layout"><div class="primary-layout__content"><header class="header-container profiles" style="--sticky-threshold:undefinedpx;"><div class="header-container--desktop"><picture class="badge__image--desktop-tablet peacock-logo--left-gutter"><img src="./Peacock_files/100" alt="Peacock logo"></picture></div></header><div class="profiles__container profiles__whoswatching" style="--background-color:#2C21AB; background-position: unset; --background-top:-50%; --background-left:-50%;"><div class="profiles__wrapper"><div class="profiles__title">Who's watching?</div><button data-tracking="false" type="button" class="profiles__button profiles__account-button" aria-label="Account"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none" class="profiles__account-button--icon"><path fill="#fff" d="M14.995 9.333c.035-.272.06-.544.06-.833 0-.289-.025-.561-.06-.833l1.843-1.402a.421.421 0 00.105-.544l-1.747-2.942c-.105-.187-.341-.254-.534-.187l-2.175.85a6.43 6.43 0 00-1.477-.833L10.678.358A.423.423 0 0010.25 0H6.754a.423.423 0 00-.428.357L5.994 2.61a6.761 6.761 0 00-1.477.833l-2.176-.85a.432.432 0 00-.533.187L.061 5.72a.412.412 0 00.104.545L2.01 7.667a6.56 6.56 0 00-.06.833c0 .28.025.561.06.833L.165 10.735a.421.421 0 00-.104.545l1.747 2.94c.105.188.341.255.533.188l2.176-.85c.455.34.944.62 1.477.832l.332 2.253c.026.204.21.357.428.357h3.496a.423.423 0 00.428-.357l.332-2.253a6.762 6.762 0 001.477-.833l2.175.85c.201.077.429 0 .534-.187l1.747-2.94a.421.421 0 00-.105-.544l-1.843-1.403zm-6.493 2.142c-1.687 0-3.059-1.335-3.059-2.975 0-1.64 1.372-2.975 3.059-2.975 1.686 0 3.058 1.334 3.058 2.975 0 1.64-1.372 2.975-3.058 2.975z"></path></svg><span class="profiles__account-button--text">Account</span></button><div class="profiles__avatars-container" data-tracking="false"><div class="profiles__avatars--slider swiper-container swiper-initialized swiper-horizontal swiper-pointer-events"><button class="swiper-button swiper-button-prev slider-button-prev swiper-button-disabled swiper-button-lock" type="button" tabindex="-1" disabled="" aria-hidden="true" aria-controls="swiper-wrapper-d1249b6e6dd04efd" aria-disabled="true"><span class="u-hiddenVisually">Previous</span><svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16"><path fill="#FFF" fill-rule="evenodd" d="M.675 7.305a.82.82 0 0 0-.264.6c0 .035.004.067.01.09a.467.467 0 0 0-.011.1c0 .225.092.439.264.602l6.908 6.505a.92.92 0 0 0 .638.251.921.921 0 0 0 .638-.25c.326-.308.326-.895 0-1.202L2.491 8 8.858 2c.33-.308.33-.897 0-1.204a.923.923 0 0 0-.637-.248.921.921 0 0 0-.638.248L.675 7.305z"></path></svg></button><div class="swiper-wrapper" id="swiper-wrapper-d1249b6e6dd04efd" style="transition-duration: 0ms; transform: translate3d(271px, 0px, 0px);"><div class="swiper-slide gutter swiper-slide-unfaded swiper-slide-visible swiper-slide-active" style="--slide-index:0; width: 269px;"><div class="profiles__avatar carousel-avatar profiles-main-page" aria-label="Who&#39;s watching?, Mason, 1 of 3" tabindex="0" role="button" aria-hidden="false" style="--background-color:linear-gradient(to bottom left, #0B7BD3, #041A45);"><div class="profiles__avatar--image-background"></div><div class="profiles__avatar--image-container"><div class="profiles__avatar--image"><img src="./Peacock_files/400" alt=""></div></div><div class="profiles__avatar--image-title-art"></div><div class="profiles__avatar--title">Mason</div><button data-tracking="false" type="button" class="profiles__button profiles__avatar--edit is-primary" aria-label="edit Mason&#39;s profile, You must be 18+ years old to edit" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none" class="playback-button-icon edit-profile"><path fill="white" d="M17.259 1.933L16.066.74a2.533 2.533 0 00-3.578 0L1.755 11.474a.559.559 0 00-.144.243l-1.59 5.566a.563.563 0 00.696.695l5.566-1.59a.561.561 0 00.243-.143L17.26 5.51A2.51 2.51 0 0018 3.721a2.51 2.51 0 00-.741-1.788zM5.833 15.347L1.38 16.62l1.273-4.452 8.643-8.644 3.18 3.18-8.643 8.644zm10.631-10.63l-1.193 1.192-3.18-3.18 1.193-1.193a1.41 1.41 0 011.988 0l1.193 1.192a1.404 1.404 0 010 1.988z"></path></svg></button><div class="profiles__avatar--disclaimer">You must be 18+ years old to edit</div></div></div><div class="swiper-slide gutter swiper-slide-unfaded swiper-slide-visible swiper-slide-next" style="--slide-index:1; width: 269px;"><div class="profiles__avatar carousel-avatar profiles-main-page" aria-label="Who&#39;s watching?, kids profile, Ella, 2 of 3" tabindex="0" role="button" aria-hidden="false" style="--background-color:linear-gradient(to bottom left, #22C3F5, #0067C5);"><div class="profiles__avatar--image-background"></div><div class="profiles__avatar--image-container"><div class="profiles__avatar--image"><img src="./Peacock_files/400(1)" alt=""></div></div><div class="profiles__avatar--image-title-art"><div class="profiles__avatar--kids-badge">kids</div></div><div class="profiles__avatar--title">Ella</div><button data-tracking="false" type="button" class="profiles__button profiles__avatar--edit" aria-label="edit Ella&#39;s profile" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none" class="playback-button-icon edit-profile"><path fill="white" d="M17.259 1.933L16.066.74a2.533 2.533 0 00-3.578 0L1.755 11.474a.559.559 0 00-.144.243l-1.59 5.566a.563.563 0 00.696.695l5.566-1.59a.561.561 0 00.243-.143L17.26 5.51A2.51 2.51 0 0018 3.721a2.51 2.51 0 00-.741-1.788zM5.833 15.347L1.38 16.62l1.273-4.452 8.643-8.644 3.18 3.18-8.643 8.644zm10.631-10.63l-1.193 1.192-3.18-3.18 1.193-1.193a1.41 1.41 0 011.988 0l1.193 1.192a1.404 1.404 0 010 1.988z"></path></svg></button></div></div><div class="swiper-slide gutter swiper-slide-unfaded swiper-slide-visible" style="--slide-index:2; width: 269px;"><div class="profiles__avatar profiles__avatar-add carousel-avatar" data-tracking="false" aria-label="Who&#39;s watching?, New Profile, 3 of 3" role="button" aria-hidden="false"><svg xmlns="http://www.w3.org/2000/svg" width="177" height="177" viewBox="0 0 177 177" fill="none" class="profiles__avatar-add--image"><circle cx="88.5" cy="88.5" r="88.5" fill="#161616"></circle><path fill="#fff" fill-rule="evenodd" d="M89.835 71.91a1.109 1.109 0 00-2.218 0v15.26H71.913a1.109 1.109 0 000 2.218h15.704v15.704a1.11 1.11 0 002.218 0V89.388h15.261a1.11 1.11 0 000-2.218H89.835V71.91z" clip-rule="evenodd"></path></svg></div></div></div><button class="swiper-button swiper-button-next slider-button-next swiper-button-disabled swiper-button-lock" type="button" tabindex="-1" disabled="" aria-hidden="false" aria-controls="swiper-wrapper-d1249b6e6dd04efd" aria-disabled="true"><span class="u-hiddenVisually">Next</span><svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16"><path fill="#FFF" fill-rule="evenodd" d="M8.579 7.305a.82.82 0 0 1 .264.6.399.399 0 0 1-.01.09c.006.028.011.06.011.1a.826.826 0 0 1-.264.602l-6.908 6.505a.92.92 0 0 1-.638.251.921.921 0 0 1-.639-.25C.07 14.894.07 14.307.395 14l6.368-6L.395 2c-.329-.308-.329-.897 0-1.204a.923.923 0 0 1 .638-.248c.24 0 .47.087.638.248l6.908 6.51z"></path></svg></button></div></div></div></div></div></div></div></div></div><script defer="defer" src="./Peacock_files/main.js.download"></script><iframe sandbox="allow-scripts allow-same-origin" title="Main screen" id="destination_publishing_iframe_nbcuss_0" name="destination_publishing_iframe_nbcuss_0_name" src="./Peacock_files/dest5.html" class="aamIframeLoaded" style="display: none; width: 0px; height: 0px;"></iframe><script src="./Peacock_files/launch-7225a4fb4332.min.js.download" defer="" async=""></script></body></html>
